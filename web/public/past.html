@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>PAST</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="mt-3">
+          <input type="text" id="name-input" name="name" class="form-control" placeholder="Write something." />
+        </div>
+        <div class="mt-3">
+          <button id="form-button" class="btn btn-primary" disabled>文字を入力してね</button>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function onChange(e) {
+      var button = document.getElementById('form-button');
+      if (e.target.value) {
+        button.disabled = false;
+        button.textContent = '送信！';
+      } else {
+        button.disabled = true;
+        button.textContent = '文字を入力してね';
+      }
+    }
+
+    var input = document.getElementById('name-input');
+    input.addEventListener('keyup', onChange);
+  </script>
+</body>
+
+</html>
