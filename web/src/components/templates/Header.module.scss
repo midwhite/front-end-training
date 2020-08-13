@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+
+  .logo {
+    padding: 16px 8px;
+    color: #2196f3;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+}

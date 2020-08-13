@@ -1,0 +1,20 @@
+.basicTemplate {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.basicTemplateBody {
+  flex: 1;
+  display: flex;
+}
+
+.basicTemplateSideBar {
+  flex-basis: 200px;
+}
+
+.basicTemplateContent {
+  flex: 1;
+}
